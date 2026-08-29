@@ -1,0 +1,643 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Contextualización &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contextualizacion';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Exploración de datos (EDA)" href="EDA_MiniProyecto4.html" />
+    <link rel="prev" title="Proyecto Integrador de Aprendizaje Automático 4 - Machine Learning" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Proyecto Integrador de Aprendizaje Automático 4 - Machine Learning
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Contextualización</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="EDA_MiniProyecto4.html"><strong>Exploración de datos (EDA)</strong></a></li>
+
+
+
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/sePerezAlbor/ML-MiniProyecto4" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/sePerezAlbor/ML-MiniProyecto4/issues/new?title=Issue%20on%20page%20%2Fcontextualizacion.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/contextualizacion.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Contextualización</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion-de-default-en-prestamos-de-lending-club-con-random-forest-scikit-learn-y-pyspark">Clasificación de default en préstamos de Lending Club con Random Forest (scikit-learn y PySpark)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo-general">Objetivo general</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contexto-aplicado">Contexto aplicado</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enfoque-metodologico">Enfoque metodológico</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resultado-esperado">Resultado esperado</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#restricciones-didacticas">Restricciones didácticas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#herramientas-sugeridas">Herramientas sugeridas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diseno-sugerido-del-notebook">Diseño sugerido del notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">Resumen</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="contextualizacion">
+<h1><strong>Contextualización</strong><a class="headerlink" href="#contextualizacion" title="Link to this heading">#</a></h1>
+<section id="clasificacion-de-default-en-prestamos-de-lending-club-con-random-forest-scikit-learn-y-pyspark">
+<h2>Clasificación de default en préstamos de Lending Club con Random Forest (scikit-learn y PySpark)<a class="headerlink" href="#clasificacion-de-default-en-prestamos-de-lending-club-con-random-forest-scikit-learn-y-pyspark" title="Link to this heading">#</a></h2>
+<p>Este proyecto corresponde al curso de <strong>Machine Learning</strong> de la Universidad del Norte (Proyecto Integrador) y se centra en la construcción de un clasificador <strong>supervisado</strong> para predecir el <strong>riesgo de incumplimiento (default)</strong> en préstamos personales emitidos por la plataforma <strong>Lending Club</strong>. Se busca comparar la implementación en <strong>scikit-learn</strong> y en <strong>PySpark</strong>, además de aplicar técnicas de <strong>interpretabilidad con LIME</strong>.</p>
+<section id="objetivo-general">
+<h3>Objetivo general<a class="headerlink" href="#objetivo-general" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Entrenar un modelo de clasificación supervisada (Random Forest)</strong> para predecir si un préstamo será <strong>pagado completamente (0)</strong> o terminará en <strong>default (1)</strong>.</p></li>
+<li><p><strong>Comparar el desempeño</strong> de los modelos en dos entornos: <em>scikit-learn</em> (local, CPU) y <em>PySpark</em> (paralelización y escalabilidad).</p></li>
+<li><p><strong>Aplicar LIME</strong> para explicar predicciones individuales y comprender el aporte de las variables al modelo.</p></li>
+</ol>
+</section>
+<section id="contexto-aplicado">
+<h3>Contexto aplicado<a class="headerlink" href="#contexto-aplicado" title="Link to this heading">#</a></h3>
+<p>En el ámbito de los <strong>servicios financieros digitales</strong>, los modelos de clasificación permiten estimar el riesgo de incumplimiento de crédito, lo cual es crucial para:</p>
+<ul class="simple">
+<li><p><strong>Mitigar pérdidas</strong> por préstamos en default.</p></li>
+<li><p><strong>Ajustar políticas de otorgamiento de crédito</strong> basadas en riesgo.</p></li>
+<li><p><strong>Generar confianza</strong> en plataformas de financiamiento colectivo (fintech).</p></li>
+</ul>
+<p>El dataset de <strong>Lending Club</strong> (2007–2020) contiene más de <strong>1,3 millones de registros</strong> con información socioeconómica, laboral, crediticia y de propósito del préstamo, lo que lo convierte en un banco de pruebas ideal para comparar enfoques de <strong>aprendizaje automático en gran escala</strong>.</p>
+</section>
+<section id="enfoque-metodologico">
+<h3>Enfoque metodológico<a class="headerlink" href="#enfoque-metodologico" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Datos y variables</strong></p>
+<ul>
+<li><p>Dataset: <em>Lending Club Loan Data (2007–2020)</em>.</p></li>
+<li><p>Variables clave: <code class="docutils literal notranslate"><span class="pre">loan_amnt</span></code>, <code class="docutils literal notranslate"><span class="pre">int_rate</span></code>, <code class="docutils literal notranslate"><span class="pre">fico_range_high</span></code>, <code class="docutils literal notranslate"><span class="pre">emp_length</span></code>, <code class="docutils literal notranslate"><span class="pre">annual_inc</span></code>, <code class="docutils literal notranslate"><span class="pre">purpose</span></code>, <code class="docutils literal notranslate"><span class="pre">home_ownership</span></code>, <code class="docutils literal notranslate"><span class="pre">dti</span></code>, <code class="docutils literal notranslate"><span class="pre">addr_state</span></code>.</p></li>
+<li><p>Variable objetivo: <strong>default</strong> (1 = <em>Charged Off</em>, 0 = <em>Fully Paid</em>).</p></li>
+</ul>
+</li>
+<li><p><strong>Preprocesamiento</strong></p>
+<ul>
+<li><p><em>scikit-learn</em>: OneHotEncoder / LabelEncoder, StandardScaler, <code class="docutils literal notranslate"><span class="pre">train_test_split</span></code> (estratificado).</p></li>
+<li><p><em>PySpark</em>: StringIndexer + OneHotEncoder, VectorAssembler, StandardScaler opcional, <code class="docutils literal notranslate"><span class="pre">randomSplit</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Modelado</strong></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">RandomForestClassifier</span></code> en <em>scikit-learn</em> y <em>PySpark</em>.</p></li>
+<li><p>Comparación de hiperparámetros: <code class="docutils literal notranslate"><span class="pre">n_estimators</span> <span class="pre">=</span> <span class="pre">[10,</span> <span class="pre">50,</span> <span class="pre">100]</span></code>, <code class="docutils literal notranslate"><span class="pre">max_depth</span> <span class="pre">=</span> <span class="pre">[5,</span> <span class="pre">10,</span> <span class="pre">15]</span></code>.</p></li>
+<li><p>Evaluación: <strong>Accuracy, Precision, Recall, F1-score, ROC AUC, matriz de confusión</strong>.</p></li>
+<li><p>Medición de <strong>tiempos de entrenamiento y predicción</strong> en ambos entornos.</p></li>
+</ul>
+</li>
+<li><p><strong>Interpretabilidad con LIME</strong></p>
+<ul>
+<li><p>Selección de instancias mal clasificadas.</p></li>
+<li><p>Análisis de variables más influyentes en la predicción.</p></li>
+<li><p>Gráficas locales que muestren el peso de cada atributo en la decisión.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="resultado-esperado">
+<h3>Resultado esperado<a class="headerlink" href="#resultado-esperado" title="Link to this heading">#</a></h3>
+<p>Un <strong>Jupyter Book bien documentado</strong> que incluya:</p>
+<ul class="simple">
+<li><p>Exploración y visualización de los datos (EDA).</p></li>
+<li><p>Preprocesamiento en <em>scikit-learn</em> y <em>PySpark</em>.</p></li>
+<li><p>Modelado con Random Forest y ajuste de hiperparámetros.</p></li>
+<li><p>Evaluación comparativa de métricas y tiempos.</p></li>
+<li><p>Análisis interpretativo con LIME.</p></li>
+<li><p><strong>Reflexión crítica</strong> sobre ventajas y limitaciones de ambos entornos (rapidez, escalabilidad, precisión, interpretabilidad).</p></li>
+</ul>
+</section>
+<section id="restricciones-didacticas">
+<h3>Restricciones didácticas<a class="headerlink" href="#restricciones-didacticas" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Usar <strong>Random Forest</strong> en ambas implementaciones.</p></li>
+<li><p>No utilizar <code class="docutils literal notranslate"><span class="pre">Pipeline</span></code> en GridSearch de <em>scikit-learn</em>.</p></li>
+<li><p>Comparar métricas de forma estandarizada.</p></li>
+<li><p>Incluir <strong>LIME obligatoriamente</strong> para explicar predicciones.</p></li>
+</ul>
+</section>
+<section id="herramientas-sugeridas">
+<h3>Herramientas sugeridas<a class="headerlink" href="#herramientas-sugeridas" title="Link to this heading">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">pandas</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">seaborn</span></code>; <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code>; <code class="docutils literal notranslate"><span class="pre">pyspark.ml</span></code>; <code class="docutils literal notranslate"><span class="pre">lime</span></code>; <strong>Jupyter Notebook</strong> / <strong>Jupyter Book</strong>.</p>
+</section>
+<section id="diseno-sugerido-del-notebook">
+<h3>Diseño sugerido del notebook<a class="headerlink" href="#diseno-sugerido-del-notebook" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Carga y EDA</strong> del dataset de Lending Club.</p></li>
+<li><p><strong>Preprocesamiento</strong> en <em>scikit-learn</em> y <em>PySpark</em>.</p></li>
+<li><p><strong>Entrenamiento y evaluación</strong> con Random Forest.</p></li>
+<li><p><strong>Comparación de métricas y tiempos</strong> entre entornos.</p></li>
+<li><p><strong>Interpretabilidad con LIME</strong> sobre predicciones seleccionadas.</p></li>
+<li><p><strong>Reflexión crítica y conclusiones</strong> sobre desempeño, escalabilidad y utilidad práctica.</p></li>
+</ol>
+</section>
+<section id="resumen">
+<h3>Resumen<a class="headerlink" href="#resumen" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Dataset:</strong> Lending Club (2007–2020, &gt;1,3M registros).</p></li>
+<li><p><strong>Tarea:</strong> Clasificación binaria (default vs fully paid).</p></li>
+<li><p><strong>Modelo núcleo:</strong> Random Forest (scikit-learn y PySpark).</p></li>
+<li><p><strong>Ventajas clave:</strong> Comparación de entornos (local vs distribuido), análisis de desempeño y tiempo, explicabilidad con LIME en contexto financiero.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>Proyecto Integrador de Aprendizaje Automático 4 - Machine Learning</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="EDA_MiniProyecto4.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><strong>Exploración de datos (EDA)</strong></p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clasificacion-de-default-en-prestamos-de-lending-club-con-random-forest-scikit-learn-y-pyspark">Clasificación de default en préstamos de Lending Club con Random Forest (scikit-learn y PySpark)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo-general">Objetivo general</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contexto-aplicado">Contexto aplicado</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enfoque-metodologico">Enfoque metodológico</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resultado-esperado">Resultado esperado</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#restricciones-didacticas">Restricciones didácticas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#herramientas-sugeridas">Herramientas sugeridas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#diseno-sugerido-del-notebook">Diseño sugerido del notebook</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">Resumen</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
